@@ -1,0 +1,15 @@
+version: '3'
+services:
+  finoptspace:
+    volumes:
+      - ./:/home/workspace
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8888:8888"
+  
+      #args:
+      #  APP_UID: $APP_UID
+      #  APP_GID: $APP_GID
+      #  USERNME: "test"

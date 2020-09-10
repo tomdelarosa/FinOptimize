@@ -1,0 +1,10 @@
+numpy
+pandas
+scipy
+cvxopt
+cvxpy
+flake8
+jupyterlab
+pylint
+matplotlib
+seaborn
