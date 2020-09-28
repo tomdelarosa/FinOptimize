@@ -7,6 +7,13 @@ RUN set -ex; \
     apt-get update && apt-get install -y --no-install-recommends $fetchDeps; \
     rm -rf /var/lib/apt/lists/*
 
+RUN set -ex; \
+    fetchDeps="libatlas-base-dev"; \
+    apt-get update && apt-get install -y --no-install-recommends $fetchDeps; \
+    rm -rf /var/lib/apt/lists/*
+
+#sudo apt install -y libatlas-base-dev
+
 ARG PY_VERSION=3
 RUN set -ex; \
     fetchDeps="python$PY_VERSION python$PY_VERSION-dev python$PY_VERSION-pip"; \
